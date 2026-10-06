@@ -1,0 +1,15 @@
+process.env.DATABASE_URL ??= 'postgresql://aijewel:aijewel@127.0.0.1:5432/aijewel_test';
+process.env.JWT_SECRET ??= 'test-jwt-secret-123456';
+process.env.JWT_REFRESH_SECRET ??= 'test-refresh-secret-123456';
+process.env.DEMO_MODE ??= 'true';
+process.env.SCHEDULER_ENABLED ??= 'false';
+process.env.UPLOAD_DIRECTORY ??= './storage/test-recordings';
+process.env.WHATSAPP_PROVIDER ??= 'mock';
+process.env.META_PROVIDER ??= 'mock';
+process.env.AI_PROVIDER ??= 'mock';
+process.env.VOICE_PROVIDER ??= 'mock';
+process.env.CALENDAR_PROVIDER ??= 'mock';
+process.env.STORAGE_PROVIDER ??= 'local';
+process.env.SEED_PASSWORD ??= 'Local-demo-1234';
+process.env.WEB_ORIGIN ??= 'http://localhost:3000';
+process.env.WHATSAPP_GROUP_FIXTURE ??= './mocks/whatsapp/aijewel-hyderabad-group.json';

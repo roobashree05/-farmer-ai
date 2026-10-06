@@ -1,0 +1,26 @@
+# Infrastructure only. Use this while developing with npm run dev.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-aijewel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aijewel}
+      POSTGRES_DB: ${POSTGRES_DB:-aijewel}
+      TZ: Asia/Kolkata
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aijewel} -d ${POSTGRES_DB:-aijewel}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata:
