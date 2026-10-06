@@ -1,0 +1,9 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "rootDir": ".",
+  "testRegex": "src/.*\\.spec\\.ts$",
+  "moduleNameMapper": {
+    "^@aijewel/shared$": "<rootDir>/../../packages/shared/src/index.ts"
+  }
+}

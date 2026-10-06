@@ -1,0 +1,692 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RoleName {
+  ADMIN
+  MARKETING_MANAGER
+  MARKETING_EXECUTIVE
+  SALES
+  MANAGEMENT
+}
+
+enum CampaignKind {
+  META
+  PERSONALIZED
+  WHATSAPP
+  SOCIAL
+}
+
+enum CampaignStatus {
+  DRAFT
+  REVIEW
+  APPROVAL
+  APPROVED
+  SCHEDULED
+  RUNNING
+  PAUSED
+  SENT
+  COMPLETED
+  REPORT
+  FAILED
+}
+
+enum MessageDirection {
+  INBOUND
+  OUTBOUND
+}
+
+enum MessageStatus {
+  PENDING
+  SENT
+  DELIVERED
+  READ
+  FAILED
+}
+
+enum CallType {
+  MANUAL
+  VOICE_BOT
+}
+
+enum CallStatus {
+  SCHEDULED
+  RINGING
+  ANSWERED
+  COMPLETED
+  MISSED
+  FAILED
+}
+
+enum MeetingStatus {
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+}
+
+enum FollowUpStatus {
+  OPEN
+  DONE
+  CANCELLED
+}
+
+enum KnowledgeCategory {
+  COMPANY
+  PRODUCT
+  PRICING
+  FAQ
+  SUPPORT
+  WARRANTY
+  DEMO
+  SALES
+}
+
+enum AiRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+enum ImportType {
+  CSV
+  WHATSAPP_GROUP
+}
+
+enum ImportStatus {
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  firstName    String
+  lastName     String
+  phone        String?
+  isActive     Boolean  @default(true)
+  roleId       String
+  role         Role     @relation(fields: [roleId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  assignedLeads    Lead[]            @relation("AssignedLeads")
+  notes            LeadNote[]
+  activities       LeadActivity[]
+  followUps        FollowUp[]
+  calls            Call[]            @relation("CallEmployee")
+  hostedMeetings   Meeting[]         @relation("MeetingHost")
+  notifications    Notification[]
+  auditLogs        AuditLog[]
+  calendarAccounts CalendarAccount[]
+  refreshTokens    RefreshToken[]
+  campaignsCreated Campaign[]        @relation("CampaignCreator")
+  importJobs       ImportJob[]
+
+  @@index([roleId])
+  @@index([isActive])
+}
+
+model Role {
+  id          String           @id @default(cuid())
+  name        RoleName         @unique
+  description String
+  permissions RolePermission[]
+  users       User[]
+}
+
+model Permission {
+  id          String           @id @default(cuid())
+  code        String           @unique
+  description String
+  roles       RolePermission[]
+}
+
+model RolePermission {
+  roleId       String
+  permissionId String
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([roleId, permissionId])
+}
+
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+}
+
+model Company {
+  id        String     @id @default(cuid())
+  name      String
+  location  String?
+  phone     String?
+  email     String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  contacts  Contact[]
+  leads     Lead[]
+  customers Customer[]
+
+  @@index([name])
+}
+
+model LeadStatusDefinition {
+  id        String  @id @default(cuid())
+  code      String  @unique
+  name      String
+  sortOrder Int
+  isActive  Boolean @default(true)
+  leads     Lead[]
+}
+
+model LeadSource {
+  id    String @id @default(cuid())
+  code  String @unique
+  name  String
+  leads Lead[]
+}
+
+model LeadTag {
+  id    String          @id @default(cuid())
+  name  String          @unique
+  leads LeadTagOnLead[]
+}
+
+model Lead {
+  id                String               @id @default(cuid())
+  displayId         Int                  @unique @default(autoincrement())
+  name              String
+  phone             String
+  whatsappNumber    String?
+  email             String?
+  shopName          String?
+  location          String?
+  leadSourceId      String
+  leadSource        LeadSource           @relation(fields: [leadSourceId], references: [id])
+  statusId          String
+  status            LeadStatusDefinition @relation(fields: [statusId], references: [id])
+  assignedUserId    String?
+  assignedUser      User?                @relation("AssignedLeads", fields: [assignedUserId], references: [id], onDelete: SetNull)
+  companyId         String?
+  company           Company?             @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  customerCategory  String?
+  previousEnquiry   String?
+  lastContactAt     DateTime?
+  nextFollowUpAt    DateTime?
+  whatsappGroupId   String?
+  whatsappGroupName String?
+  createdAt         DateTime             @default(now())
+  updatedAt         DateTime             @updatedAt
+  deletedAt         DateTime?
+
+  tags             LeadTagOnLead[]
+  notes            LeadNote[]
+  activities       LeadActivity[]
+  followUps        FollowUp[]
+  calls            Call[]
+  meetings         Meeting[]
+  contacts         Contact[]
+  customer         Customer?
+  conversations    WhatsAppConversation[]
+  campaignMessages CampaignMessage[]
+  aiConversations  AIConversation[]
+  groupMemberships WhatsAppGroupMember[]
+  whatsappContact  WhatsAppContact?
+
+  @@index([phone])
+  @@index([email])
+  @@index([shopName])
+  @@index([statusId])
+  @@index([leadSourceId])
+  @@index([assignedUserId])
+  @@index([createdAt])
+  @@index([updatedAt])
+  @@index([location])
+  @@index([name])
+  @@index([deletedAt, createdAt])
+  @@index([assignedUserId, statusId])
+  @@index([leadSourceId, createdAt])
+}
+
+model LeadTagOnLead {
+  leadId String
+  tagId  String
+  lead   Lead    @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  tag    LeadTag @relation(fields: [tagId], references: [id], onDelete: Cascade)
+
+  @@id([leadId, tagId])
+  @@index([tagId])
+}
+
+model LeadNote {
+  id        String   @id @default(cuid())
+  leadId    String
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  body      String
+  createdAt DateTime @default(now())
+
+  @@index([leadId, createdAt])
+}
+
+model LeadActivity {
+  id        String   @id @default(cuid())
+  leadId    String
+  lead      Lead     @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  type      String
+  summary   String
+  metadata  Json?
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+
+  @@index([leadId, createdAt])
+  @@index([type])
+}
+
+model Customer {
+  id        String    @id @default(cuid())
+  leadId    String    @unique
+  lead      Lead      @relation(fields: [leadId], references: [id])
+  name      String
+  phone     String
+  email     String?
+  shopName  String?
+  location  String?
+  category  String?
+  companyId String?
+  company   Company?  @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  contacts  Contact[]
+  calls     Call[]
+
+  @@index([phone])
+  @@index([email])
+  @@index([shopName])
+  @@index([name])
+}
+
+model Contact {
+  id             String    @id @default(cuid())
+  name           String
+  phone          String
+  email          String?
+  whatsappNumber String?
+  companyId      String?
+  company        Company?  @relation(fields: [companyId], references: [id], onDelete: SetNull)
+  customerId     String?
+  customer       Customer? @relation(fields: [customerId], references: [id], onDelete: SetNull)
+  leadId         String?
+  lead           Lead?     @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@index([phone])
+  @@index([email])
+  @@index([leadId])
+  @@index([customerId])
+}
+
+model Campaign {
+  id             String         @id @default(cuid())
+  name           String
+  kind           CampaignKind
+  platform       String
+  objective      String
+  audience       String?
+  budget         Decimal        @default(0) @db.Decimal(12, 2)
+  startDate      DateTime?
+  endDate        DateTime?
+  content        String
+  creative       String?
+  status         CampaignStatus @default(DRAFT)
+  leadIds        Json?
+  createdById    String
+  createdBy      User           @relation("CampaignCreator", fields: [createdById], references: [id])
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  messages       CampaignMessage[]
+  metrics        CampaignMetric[]
+
+  @@index([status])
+  @@index([kind])
+  @@index([startDate])
+  @@index([platform])
+  @@index([createdById])
+}
+
+model CampaignMessage {
+  id           String    @id @default(cuid())
+  campaignId   String
+  campaign     Campaign  @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  leadId       String
+  lead         Lead      @relation(fields: [leadId], references: [id])
+  renderedBody String
+  status       String
+  sentAt       DateTime?
+  createdAt    DateTime  @default(now())
+
+  @@index([campaignId])
+  @@index([leadId])
+}
+
+model CampaignMetric {
+  id          String   @id @default(cuid())
+  campaignId  String
+  campaign    Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  date        DateTime @db.Date
+  spend       Decimal  @default(0) @db.Decimal(12, 2)
+  impressions Int      @default(0)
+  reach       Int      @default(0)
+  clicks      Int      @default(0)
+  leads       Int      @default(0)
+  engagement  Int      @default(0)
+  conversions Int      @default(0)
+
+  @@unique([campaignId, date])
+  @@index([date])
+}
+
+model WhatsAppContact {
+  id        String   @id @default(cuid())
+  name      String
+  phone     String   @unique
+  waId      String   @unique
+  leadId    String?  @unique
+  lead      Lead?    @relation(fields: [leadId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+}
+
+model WhatsAppGroup {
+  id         String                @id @default(cuid())
+  externalId String                @unique
+  name       String
+  importedAt DateTime?
+  createdAt  DateTime              @default(now())
+  members    WhatsAppGroupMember[]
+}
+
+model WhatsAppGroupMember {
+  id      String        @id @default(cuid())
+  groupId String
+  group   WhatsAppGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  name    String
+  phone   String
+  leadId  String?
+  lead    Lead?         @relation(fields: [leadId], references: [id], onDelete: SetNull)
+
+  @@unique([groupId, phone])
+  @@index([phone])
+  @@index([leadId])
+}
+
+model WhatsAppConversation {
+  id            String            @id @default(cuid())
+  leadId        String
+  lead          Lead              @relation(fields: [leadId], references: [id])
+  contactPhone  String
+  lastMessageAt DateTime?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
+  messages      WhatsAppMessage[]
+
+  @@index([leadId])
+  @@index([contactPhone])
+  @@index([lastMessageAt])
+}
+
+model WhatsAppMessage {
+  id                String               @id @default(cuid())
+  conversationId    String
+  conversation      WhatsAppConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  direction         MessageDirection
+  body              String
+  status            MessageStatus
+  providerMessageId String?
+  statusEvents      Json?
+  createdAt         DateTime             @default(now())
+
+  @@index([conversationId, createdAt])
+  @@index([providerMessageId])
+}
+
+model Call {
+  id              String     @id @default(cuid())
+  leadId          String
+  lead            Lead       @relation(fields: [leadId], references: [id])
+  customerId      String?
+  customer        Customer?  @relation(fields: [customerId], references: [id], onDelete: SetNull)
+  employeeId      String
+  employee        User       @relation("CallEmployee", fields: [employeeId], references: [id])
+  startedAt       DateTime
+  durationSeconds Int        @default(0)
+  callType        CallType
+  status          CallStatus
+  notes           String?
+  outcome         String?
+  followUpAt      DateTime?
+  transcript      String?
+  summary         String?
+  voiceState      String?
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  recording       CallRecording?
+
+  @@index([leadId])
+  @@index([employeeId])
+  @@index([status])
+  @@index([callType])
+  @@index([startedAt])
+}
+
+model CallRecording {
+  id              String   @id @default(cuid())
+  callId          String   @unique
+  call            Call     @relation(fields: [callId], references: [id], onDelete: Cascade)
+  storageKey      String
+  fileName        String
+  mimeType        String
+  byteSize        Int
+  durationSeconds Int
+  createdAt       DateTime @default(now())
+}
+
+model Meeting {
+  id              String        @id @default(cuid())
+  leadId          String
+  lead            Lead          @relation(fields: [leadId], references: [id])
+  hostUserId      String
+  host            User          @relation("MeetingHost", fields: [hostUserId], references: [id])
+  title           String
+  startAt         DateTime
+  endAt           DateTime
+  durationMinutes Int
+  meetingType     String
+  status          MeetingStatus @default(SCHEDULED)
+  attendeeName    String
+  attendeePhone   String
+  attendeeEmail   String?
+  externalEventId String?
+  notes           String?
+  reminderSentAt  DateTime?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([leadId])
+  @@index([hostUserId])
+  @@index([startAt])
+  @@index([status])
+}
+
+model CalendarAccount {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider    String
+  externalId  String
+  displayName String
+  createdAt   DateTime @default(now())
+
+  @@unique([provider, externalId])
+  @@index([userId])
+}
+
+model KnowledgeBase {
+  id        String                  @id @default(cuid())
+  category  KnowledgeCategory
+  name      String
+  isActive  Boolean                 @default(true)
+  createdAt DateTime                @default(now())
+  updatedAt DateTime                @updatedAt
+  documents KnowledgeBaseDocument[]
+
+  @@index([category])
+  @@index([isActive])
+}
+
+model KnowledgeBaseDocument {
+  id              String        @id @default(cuid())
+  knowledgeBaseId String
+  knowledgeBase   KnowledgeBase @relation(fields: [knowledgeBaseId], references: [id], onDelete: Cascade)
+  title           String
+  content         String
+  isActive        Boolean       @default(true)
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([knowledgeBaseId])
+  @@index([isActive])
+}
+
+model AIConversation {
+  id        String      @id @default(cuid())
+  leadId    String
+  lead      Lead        @relation(fields: [leadId], references: [id])
+  channel   String
+  createdAt DateTime    @default(now())
+  updatedAt DateTime    @updatedAt
+  messages  AIMessage[]
+
+  @@index([leadId])
+}
+
+model AIMessage {
+  id              String         @id @default(cuid())
+  conversationId  String
+  conversation    AIConversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  role            AiRole
+  content         String
+  confidence      Float?
+  escalateToHuman Boolean        @default(false)
+  sources         Json?
+  createdAt       DateTime       @default(now())
+
+  @@index([conversationId, createdAt])
+}
+
+model Notification {
+  id         String    @id @default(cuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type       String
+  title      String
+  body       String
+  readAt     DateTime?
+  entityType String?
+  entityId   String?
+  createdAt  DateTime  @default(now())
+
+  @@index([userId, readAt])
+  @@index([createdAt])
+  @@index([type])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String
+  entity     String
+  entityId   String?
+  beforeData Json?
+  afterData  Json?
+  ipAddress  String?
+  requestId  String?
+  createdAt  DateTime @default(now())
+
+  @@index([entity, entityId])
+  @@index([userId, createdAt])
+  @@index([action])
+  @@index([createdAt])
+}
+
+model FollowUp {
+  id        String         @id @default(cuid())
+  leadId    String
+  lead      Lead           @relation(fields: [leadId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User           @relation(fields: [userId], references: [id])
+  dueAt     DateTime
+  status    FollowUpStatus @default(OPEN)
+  notes     String?
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
+
+  @@index([leadId])
+  @@index([userId])
+  @@index([dueAt, status])
+}
+
+model Template {
+  id        String   @id @default(cuid())
+  name      String
+  channel   String
+  body      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([channel])
+}
+
+model Segment {
+  id         String   @id @default(cuid())
+  name       String
+  filterJson Json
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model ImportJob {
+  id          String       @id @default(cuid())
+  type        ImportType
+  fileName    String
+  status      ImportStatus
+  totalRows   Int          @default(0)
+  successful  Int          @default(0)
+  duplicates  Int          @default(0)
+  invalid     Int          @default(0)
+  errors      Json?
+  createdById String
+  createdBy   User         @relation(fields: [createdById], references: [id])
+  createdAt   DateTime     @default(now())
+
+  @@index([createdAt])
+  @@index([type])
+  @@index([createdById])
+}

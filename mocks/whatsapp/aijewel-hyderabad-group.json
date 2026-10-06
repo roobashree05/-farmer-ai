@@ -1,0 +1,3006 @@
+{
+  "groupId": "wa-group-hyd-001",
+  "groupName": "AIJewel Hyderabad Jewellery Group",
+  "members": [
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000001",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000002",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000003",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000004",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000005",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000006",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000007",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000008",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000009",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000010",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000011",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000012",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000013",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000014",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000015",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000016",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000017",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000018",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000019",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000020",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000021",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000022",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000023",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000024",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000025",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000026",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000027",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000028",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000029",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000030",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000031",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000032",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000033",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000034",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000035",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000036",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000037",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000038",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000039",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000040",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000041",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000042",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000043",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000044",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000045",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000046",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000047",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000048",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000049",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000050",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000051",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000052",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000053",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000054",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000055",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000056",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000057",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000058",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000059",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000060",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000061",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000062",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000063",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000064",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000065",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000066",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000067",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000068",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000069",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000070",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000071",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000072",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000073",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000074",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000075",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000076",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000077",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000078",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000079",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000080",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000081",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000082",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000083",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000084",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000085",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000086",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000087",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000088",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000089",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000090",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000091",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000092",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000093",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000094",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000095",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000096",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000097",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000098",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000099",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000100",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000101",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000102",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000103",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000104",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000105",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000106",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000107",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000108",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000109",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000110",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000111",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000112",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000113",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000114",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000115",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000116",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000117",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000118",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000119",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000120",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000121",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000122",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000123",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000124",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000125",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000126",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000127",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000128",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000129",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000130",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000131",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000132",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000133",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000134",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000135",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000136",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000137",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000138",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000139",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000140",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000141",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000142",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000143",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000144",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000145",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000146",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000147",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000148",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000149",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000150",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000151",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000152",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000153",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000154",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000155",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000156",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000157",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000158",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000159",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000160",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000161",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000162",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000163",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000164",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000165",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000166",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000167",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000168",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000169",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000170",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000171",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000172",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000173",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000174",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000175",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000176",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000177",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000178",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000179",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000180",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000181",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000182",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000183",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000184",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000185",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000186",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000187",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000188",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000189",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000190",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000191",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000192",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000193",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000194",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000195",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000196",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000197",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000198",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000199",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000200",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000201",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000202",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000203",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000204",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000205",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000206",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000207",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000208",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000209",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000210",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000211",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000212",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000213",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000214",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000215",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000216",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000217",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000218",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000219",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000220",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000221",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000222",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000223",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000224",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000225",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000226",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000227",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000228",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000229",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000230",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000231",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000232",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000233",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000234",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000235",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000236",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000237",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000238",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000239",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000240",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000241",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000242",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000243",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000244",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000245",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000246",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000247",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000248",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000249",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000250",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000251",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000252",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000253",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000254",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000255",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000256",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000257",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000258",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000259",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000260",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000261",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000262",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000263",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000264",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000265",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000266",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000267",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000268",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000269",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000270",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000271",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000272",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000273",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000274",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000275",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000276",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000277",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000278",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000279",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000280",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000281",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000282",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000283",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000284",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000285",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000286",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000287",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000288",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000289",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000290",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000291",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000292",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000293",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000294",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000295",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000296",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000297",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000298",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000299",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000300",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000301",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000302",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000303",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000304",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000305",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000306",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000307",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000308",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000309",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000310",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000311",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000312",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000313",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000314",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000315",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000316",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000317",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000318",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000319",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000320",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000321",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000322",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000323",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000324",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000325",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000326",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000327",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000328",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000329",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000330",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000331",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000332",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000333",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000334",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000335",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000336",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000337",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000338",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000339",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000340",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000341",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000342",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000343",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000344",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000345",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000346",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000347",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000348",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000349",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000350",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000351",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000352",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000353",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000354",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000355",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000356",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000357",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000358",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000359",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000360",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000361",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000362",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000363",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000364",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000365",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000366",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000367",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000368",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000369",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000370",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000371",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000372",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000373",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000374",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000375",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000376",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000377",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000378",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000379",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000380",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000381",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000382",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000383",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000384",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000385",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000386",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000387",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000388",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000389",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000390",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000391",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000392",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000393",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000394",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000395",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000396",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000397",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000398",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000399",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000400",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000401",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000402",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000403",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000404",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000405",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000406",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000407",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000408",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000409",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000410",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000411",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000412",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000413",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000414",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000415",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000416",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000417",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000418",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000419",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000420",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000421",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000422",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000423",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000424",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000425",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000426",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000427",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000428",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000429",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000430",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000431",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000432",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000433",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000434",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000435",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000436",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000437",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000438",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000439",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000440",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Khan",
+      "phone": "+919810000441",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Gupta",
+      "phone": "+919810000442",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Singh",
+      "phone": "+919810000443",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Shetty",
+      "phone": "+919810000444",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Verma",
+      "phone": "+919810000445",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Joshi",
+      "phone": "+919810000446",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Sharma",
+      "phone": "+919810000447",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Naidu",
+      "phone": "+919810000448",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Rao",
+      "phone": "+919810000449",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Jain",
+      "phone": "+919810000450",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Banerjee",
+      "phone": "+919810000451",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Nair",
+      "phone": "+919810000452",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Malhotra",
+      "phone": "+919810000453",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Iyer",
+      "phone": "+919810000454",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Patel",
+      "phone": "+919810000455",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Das",
+      "phone": "+919810000456",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Menon",
+      "phone": "+919810000457",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Chopra",
+      "phone": "+919810000458",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Kapoor",
+      "phone": "+919810000459",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Reddy",
+      "phone": "+919810000460",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Khan",
+      "phone": "+919810000461",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Gupta",
+      "phone": "+919810000462",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Singh",
+      "phone": "+919810000463",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Shetty",
+      "phone": "+919810000464",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Verma",
+      "phone": "+919810000465",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Joshi",
+      "phone": "+919810000466",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Sharma",
+      "phone": "+919810000467",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Naidu",
+      "phone": "+919810000468",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Rao",
+      "phone": "+919810000469",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Jain",
+      "phone": "+919810000470",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Kavita Banerjee",
+      "phone": "+919810000471",
+      "shopName": "Rekha Jewellers",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Harish Nair",
+      "phone": "+919810000472",
+      "shopName": "Lakshmi Gold House",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Nalini Malhotra",
+      "phone": "+919810000473",
+      "shopName": "Divya Diamonds",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Farhan Iyer",
+      "phone": "+919810000474",
+      "shopName": "Naveen Ornaments",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Zoya Patel",
+      "phone": "+919810000475",
+      "shopName": "Zoya Silver Works",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Thomas Das",
+      "phone": "+919810000476",
+      "shopName": "Ravi Gem Palace",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Rekha Menon",
+      "phone": "+919810000477",
+      "shopName": "Priya Bullion",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Vikram Chopra",
+      "phone": "+919810000478",
+      "shopName": "Rohit Gold & Co",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Shalini Kapoor",
+      "phone": "+919810000479",
+      "shopName": "Nalini Heritage Jewels",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Kumar Reddy",
+      "phone": "+919810000480",
+      "shopName": "Kumar Jewels",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Anitha Khan",
+      "phone": "+919810000481",
+      "shopName": "Fatima Jewellers",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Ravi Gupta",
+      "phone": "+919810000482",
+      "shopName": "Venkat Gold House",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Suresh Singh",
+      "phone": "+919810000483",
+      "shopName": "Kavita Diamonds",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Lakshmi Shetty",
+      "phone": "+919810000484",
+      "shopName": "Vikram Ornaments",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Meena Verma",
+      "phone": "+919810000485",
+      "shopName": "Meena Silver Works",
+      "location": "Madhapur, Hyderabad"
+    },
+    {
+      "name": "Imran Joshi",
+      "phone": "+919810000486",
+      "shopName": "Karthik Gem Palace",
+      "location": "Banjara Hills, Hyderabad"
+    },
+    {
+      "name": "Fatima Sharma",
+      "phone": "+919810000487",
+      "shopName": "Deepa Bullion",
+      "location": "Ameerpet, Hyderabad"
+    },
+    {
+      "name": "Joseph Naidu",
+      "phone": "+919810000488",
+      "shopName": "Thomas Gold & Co",
+      "location": "LB Nagar, Hyderabad"
+    },
+    {
+      "name": "Priya Rao",
+      "phone": "+919810000489",
+      "shopName": "Suresh Heritage Jewels",
+      "location": "Uppal, Hyderabad"
+    },
+    {
+      "name": "Arjun Jain",
+      "phone": "+919810000490",
+      "shopName": "Arjun Jewels",
+      "location": "Gachibowli, Hyderabad"
+    },
+    {
+      "name": "Divya Banerjee",
+      "phone": "+919810000491",
+      "shopName": "Pooja Jewellers",
+      "location": "Himayatnagar, Hyderabad"
+    },
+    {
+      "name": "Karthik Nair",
+      "phone": "+919810000492",
+      "shopName": "Farhan Gold House",
+      "location": "Malakpet, Hyderabad"
+    },
+    {
+      "name": "Sneha Malhotra",
+      "phone": "+919810000493",
+      "shopName": "Anitha Diamonds",
+      "location": "Tolichowki, Hyderabad"
+    },
+    {
+      "name": "Venkat Iyer",
+      "phone": "+919810000494",
+      "shopName": "Joseph Ornaments",
+      "location": "Mehdipatnam, Hyderabad"
+    },
+    {
+      "name": "Ayesha Patel",
+      "phone": "+919810000495",
+      "shopName": "Ayesha Silver Works",
+      "location": "Abids, Hyderabad"
+    },
+    {
+      "name": "Rohit Das",
+      "phone": "+919810000496",
+      "shopName": "Harish Gem Palace",
+      "location": "Charminar, Hyderabad"
+    },
+    {
+      "name": "Pooja Menon",
+      "phone": "+919810000497",
+      "shopName": "Shalini Bullion",
+      "location": "Begumpet, Hyderabad"
+    },
+    {
+      "name": "Naveen Chopra",
+      "phone": "+919810000498",
+      "shopName": "Imran Gold & Co",
+      "location": "Secunderabad, Hyderabad"
+    },
+    {
+      "name": "Deepa Kapoor",
+      "phone": "+919810000499",
+      "shopName": "Sneha Heritage Jewels",
+      "location": "Kukatpally, Hyderabad"
+    },
+    {
+      "name": "Sanjay Reddy",
+      "phone": "+919810000500",
+      "shopName": "Sanjay Jewels",
+      "location": "Madhapur, Hyderabad"
+    }
+  ]
+}

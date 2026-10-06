@@ -1,0 +1,11 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "rootDir": ".",
+  "testRegex": "test/integration/.*\\.spec\\.ts$",
+  "setupFiles": ["<rootDir>/test/setup-env.ts"],
+  "testTimeout": 180000,
+  "moduleNameMapper": {
+    "^@aijewel/shared$": "<rootDir>/../../packages/shared/src/index.ts"
+  }
+}

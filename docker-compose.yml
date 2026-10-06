@@ -1,0 +1,107 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-aijewel}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-aijewel}
+      POSTGRES_DB: ${POSTGRES_DB:-aijewel}
+      TZ: Asia/Kolkata
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-aijewel} -d ${POSTGRES_DB:-aijewel}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/api.Dockerfile
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-aijewel}:${POSTGRES_PASSWORD:-aijewel}@postgres:5432/${POSTGRES_DB:-aijewel}
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET:-local-dev-jwt-secret-change-me}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-local-dev-refresh-secret-change-me}
+      JWT_ACCESS_TTL: 15m
+      JWT_REFRESH_TTL: 7d
+      API_PORT: 4000
+      WEB_ORIGIN: http://localhost:3000
+      UPLOAD_DIRECTORY: /app/storage/recordings
+      TZ: Asia/Kolkata
+      AI_PROVIDER: mock
+      WHATSAPP_PROVIDER: mock
+      META_PROVIDER: mock
+      VOICE_PROVIDER: mock
+      CALENDAR_PROVIDER: mock
+      STORAGE_PROVIDER: local
+      DEMO_MODE: "true"
+      SCHEDULER_ENABLED: "false"
+      SEED_PASSWORD: ${SEED_PASSWORD:-Local-demo-1234}
+      WHATSAPP_GROUP_FIXTURE: /app/mocks/whatsapp/aijewel-hyderabad-group.json
+    ports:
+      - "4000:4000"
+    volumes:
+      - recordings:/app/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/api.Dockerfile
+    command: ["node", "apps/api/dist/worker.js"]
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-aijewel}:${POSTGRES_PASSWORD:-aijewel}@postgres:5432/${POSTGRES_DB:-aijewel}
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET:-local-dev-jwt-secret-change-me}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-local-dev-refresh-secret-change-me}
+      UPLOAD_DIRECTORY: /app/storage/recordings
+      TZ: Asia/Kolkata
+      AI_PROVIDER: mock
+      WHATSAPP_PROVIDER: mock
+      META_PROVIDER: mock
+      VOICE_PROVIDER: mock
+      CALENDAR_PROVIDER: mock
+      STORAGE_PROVIDER: local
+      DEMO_MODE: "true"
+      SCHEDULER_ENABLED: "true"
+      SEED_PASSWORD: ${SEED_PASSWORD:-Local-demo-1234}
+    volumes:
+      - recordings:/app/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+      api:
+        condition: service_started
+
+  web:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/web.Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: http://localhost:4000
+        NEXT_PUBLIC_DEMO_MODE: "true"
+        NEXT_PUBLIC_DEMO_EMAIL: admin@aijewel.local
+        NEXT_PUBLIC_DEMO_PASSWORD: ${SEED_PASSWORD:-change-me-local-only}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  recordings:
