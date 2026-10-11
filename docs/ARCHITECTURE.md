@@ -34,7 +34,7 @@ infrastructure/docker
 
 ## Provider seam
 
-`IntegrationsModule` reads `WHATSAPP_PROVIDER`, `META_PROVIDER`, `AI_PROVIDER`, `VOICE_PROVIDER`, `CALENDAR_PROVIDER`, and `STORAGE_PROVIDER`. `mock` or `local` constructs the in-process adapter. Any other value fails startup with `PROVIDER_NOT_CONFIGURED` instead of pretending a live integration exists.
+`IntegrationsModule` reads `WHATSAPP_PROVIDER`, `META_PROVIDER`, `AI_PROVIDER`, `VOICE_PROVIDER`, `CALENDAR_PROVIDER`, and `STORAGE_PROVIDER`. `mock` or `local` constructs the in-process adapter. `WHATSAPP_PROVIDER=meta` constructs the WhatsApp Cloud API adapter after the Meta variables validate. Any other value fails startup with `PROVIDER_NOT_CONFIGURED` instead of pretending a live integration exists. A valid Meta configuration is still `untested` until the settings connection test succeeds.
 
 ## Request path
 

@@ -11,7 +11,9 @@
 - Helmet sets secure headers on the API. The web app sets `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, and a locked-down permissions policy.
 - Recording download requires `recordings.read` and writes `RECORDING_ACCESSED`.
 - Secrets come from the environment. `.env` is gitignored. `.env.example` has placeholders.
-- Logs include timestamp, level, service, request id, user id, and message. They do not include request bodies.
+- Meta access tokens and the app secret are read from the environment. Settings, audit rows, and logs do not include them. Graph requests send the token in the `Authorization` header, not the query string.
+- `GET /api/webhooks/whatsapp` compares the verify token with a SHA-256 digest and `timingSafeEqual`, and returns the challenge only after a match. `POST` rejects a body whose `X-Hub-Signature-256` does not match `META_APP_SECRET` over the raw bytes.
+- Logs include timestamp, level, service, request id, user id, and message. They do not include request bodies. WhatsApp API failures log the HTTP status, Meta error code, and `fbtrace_id` only.
 
 ## Token storage
 

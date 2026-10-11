@@ -2,7 +2,7 @@
 
 Local-first CRM for jewellery retail: leads, WhatsApp, campaigns, meetings, call recordings, and a knowledge-base voice bot.
 
-The business workflow runs on a laptop with Docker and mock providers. PostgreSQL, files, and the API do not call Meta, WhatsApp, or a telephony network. Those providers sit behind interfaces so a later AWS deployment can replace the mocks without rewriting CRM rules.
+The business workflow runs on a laptop with Docker and mock providers. PostgreSQL, files, and the API do not call Meta, WhatsApp, or a telephony network unless `WHATSAPP_PROVIDER=meta` and the Meta credentials are configured. Those providers sit behind interfaces. Mock remains the default. A Meta selection is not treated as connected until the settings connection test succeeds.
 
 ## Stack
 

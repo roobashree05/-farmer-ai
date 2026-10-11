@@ -8,7 +8,7 @@ Base path: `/api`. Interactive docs: `/docs`.
 | users | `/api/users` | Create and update users and roles |
 | leads | `/api/leads` | Search, CRUD, notes, follow-ups, convert, merge, bulk, CSV, WhatsApp group import, export |
 | customers | `/api/customers` | Customer list and 360 workspace |
-| whatsapp | `/api/whatsapp/conversations` | Inbox, send, mock reply, AI answer |
+| whatsapp | `/api/whatsapp/conversations`, `/api/whatsapp/stream`, `/api/webhooks/whatsapp` | Inbox, send, mock reply or Meta Cloud API, delivery webhooks |
 | campaigns | `/api/campaigns`, `/api/templates`, `/api/segments` | Drafts, preview, transitions, mock execution |
 | meetings | `/api/meetings`, `/api/calendar` | Slots, booking, cancel, reschedule, calendar feed |
 | calls | `/api/calls` | Manual calls, voice bot, recording upload and stream |

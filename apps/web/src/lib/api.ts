@@ -71,4 +71,72 @@ export async function apiForm<T>(path: string, form: FormData): Promise<T> {
   return body.data as T;
 }
 
+export function subscribeWhatsApp(
+  onEvent: (event: { type?: string; conversationId?: string; messageId?: string; status?: string }) => void,
+  signal: AbortSignal,
+) {
+  const run = async () => {
+    while (!signal.aborted) {
+      try {
+        const reconnect = await readEventStream('/api/whatsapp/stream', onEvent, signal);
+        if (!reconnect) return;
+      } catch {
+        // The next loop reconnects after a short pause.
+      }
+      if (signal.aborted) return;
+      await wait(3000, signal);
+    }
+  };
+  void run();
+}
+
+async function readEventStream(
+  path: string,
+  onEvent: (event: { type?: string; conversationId?: string; messageId?: string; status?: string }) => void,
+  signal: AbortSignal,
+): Promise<boolean> {
+  const response = await fetch(`${API_URL}${path}`, { headers: headers(), signal });
+  if (response.status === 401) {
+    const refreshed = await refresh();
+    if (refreshed) return readEventStream(path, onEvent, signal);
+    return false;
+  }
+  if (response.status === 403) return false;
+  if (!response.ok || !response.body) throw new Error('stream failed');
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder();
+  let buffer = '';
+  while (!signal.aborted) {
+    const { value, done } = await reader.read();
+    if (done) return !signal.aborted;
+    buffer += decoder.decode(value, { stream: true });
+    const parts = buffer.split('\n\n');
+    buffer = parts.pop() ?? '';
+    for (const part of parts) {
+      const data = part
+        .split('\n')
+        .filter((line) => line.startsWith('data:'))
+        .map((line) => line.slice(5).trim())
+        .join('\n');
+      if (!data) continue;
+      try {
+        onEvent(JSON.parse(data) as { type?: string; conversationId?: string });
+      } catch {
+        // Ignore a partial or non-JSON event.
+      }
+    }
+  }
+  return false;
+}
+
+function wait(ms: number, signal: AbortSignal) {
+  return new Promise<void>((resolve) => {
+    const timer = setTimeout(resolve, ms);
+    signal.addEventListener('abort', () => {
+      clearTimeout(timer);
+      resolve();
+    }, { once: true });
+  });
+}
+
 export { API_URL };

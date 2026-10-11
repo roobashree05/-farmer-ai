@@ -56,6 +56,8 @@ STORAGE_PROVIDER=local
 DEMO_MODE=true
 ```
 
+`WHATSAPP_PROVIDER=mock` is the laptop default. To send and receive real WhatsApp messages, set `WHATSAPP_PROVIDER=meta` and fill `META_WABA_ID`, `META_PHONE_NUMBER_ID`, `META_ACCESS_TOKEN`, `META_APP_SECRET`, `META_GRAPH_API_VERSION`, `META_WEBHOOK_VERIFY_TOKEN`, and `PUBLIC_BASE_URL`. Supported versions are `v21.0` through `v26.0`. `v25.0` is the version named by the Cloud API send-messages guide. The API refuses to start when `meta` is selected and any of those values are missing or invalid. After it starts, open Settings and run Test WhatsApp connection. The page stays on `untested` until that Graph call succeeds. Point the Meta webhook at `{PUBLIC_BASE_URL}/api/webhooks/whatsapp` and subscribe to the `messages` field.
+
 `UPLOAD_DIRECTORY` is the recording folder. It is created on demand and is gitignored.
 
 ## Seed logins

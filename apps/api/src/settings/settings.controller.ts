@@ -9,6 +9,7 @@ import type { Actor } from '../common/actor';
 import { CurrentUser } from '../common/current-user.decorator';
 import { RequirePermissions } from '../common/decorators';
 import { PrismaService } from '../prisma/prisma.service';
+import { WhatsAppService } from '../whatsapp/whatsapp.service';
 
 class StatusDto {
   @IsString()
@@ -46,6 +47,7 @@ export class SettingsController {
     private readonly config: ConfigService,
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
+    private readonly whatsapp: WhatsAppService,
   ) {}
 
   @Get()
@@ -61,7 +63,15 @@ export class SettingsController {
         calendar: this.config.get('CALENDAR_PROVIDER', 'mock'),
         storage: this.config.get('STORAGE_PROVIDER', 'local'),
       },
+      whatsapp: this.whatsapp.connectionReport(),
     };
+  }
+
+  @Post('whatsapp/connection-test')
+  @RequirePermissions('settings.write')
+  @ApiOperation({ summary: 'Test the configured Meta WhatsApp credentials without sending a message' })
+  testWhatsApp(@CurrentUser() actor: Actor) {
+    return this.whatsapp.testConnection(actor);
   }
 
   @Get('lead-statuses')
