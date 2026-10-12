@@ -1,7 +1,10 @@
 import { Inject, Injectable } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
 import { AppException } from '../common/app.exception';
 import type { Actor } from '../common/actor';
+import { AuditService } from '../audit/audit.service';
 import type { AIProvider } from '../integrations/ai/ai.provider';
+import { describeAiIntegration } from '../integrations/ai/anthropic-config';
 import { AI_PROVIDER } from '../integrations/tokens';
 import { NotificationsService } from '../notifications/notifications.service';
 import { PrismaService } from '../prisma/prisma.service';
@@ -11,8 +14,42 @@ export class AiService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly notifications: NotificationsService,
+    private readonly config: ConfigService,
+    private readonly audit: AuditService,
     @Inject(AI_PROVIDER) private readonly ai: AIProvider,
   ) {}
+
+  connectionReport() {
+    return describeAiIntegration({
+      provider: this.config.get<string>('AI_PROVIDER'),
+      env: this.config,
+      probe: this.ai.connectionState(),
+    });
+  }
+
+  async testConnection(actor: Actor) {
+    const before = this.connectionReport();
+    if (before.provider !== 'anthropic') {
+      throw new AppException('AI_PROVIDER_MOCK', 'An Anthropic connection test runs only when AI_PROVIDER=anthropic', 409);
+    }
+    if (before.configuration !== 'valid') {
+      throw new AppException('PROVIDER_NOT_CONFIGURED', 'Anthropic configuration is incomplete', 409);
+    }
+    await this.ai.probeConnection();
+    const report = this.connectionReport();
+    await this.audit.record({
+      userId: actor.id,
+      action: 'AI_CONNECTION_TESTED',
+      entity: 'AI',
+      entityId: 'anthropic',
+      after: {
+        connection: report.connection,
+        configuration: report.configuration,
+        model: report.model,
+      },
+    });
+    return report;
+  }
 
   async reply(input: { leadId: string; message: string; channel?: string }, actor: Actor) {
     const lead = await this.prisma.lead.findFirst({ where: { id: input.leadId, deletedAt: null } });

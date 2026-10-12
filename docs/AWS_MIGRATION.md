@@ -11,7 +11,7 @@ Do not deploy this repository to AWS until the local acceptance tests pass. The 
 | `.env` file | Secrets Manager or SSM | Inject the same variable names |
 | stdout JSON logs | CloudWatch | Ship the existing JSON log lines |
 | `MockAIProvider` | Bedrock or another approved model | New `AIProvider` that still receives only knowledge-base documents |
-| `MockWhatsAppProvider` | Meta WhatsApp Cloud API | New `WhatsAppProvider` |
+| `MockWhatsAppProvider` | Meta WhatsApp Cloud API | `MetaWhatsAppProvider` when `WHATSAPP_PROVIDER=meta` |
 | `MockMetaProvider` | Meta Marketing API | New `MetaProvider` |
 | `MockVoiceProvider` | Approved telephony vendor | New `VoiceProvider` |
 | `MockCalendarProvider` | Google or Microsoft calendar | New `CalendarProvider` |

@@ -1,4 +1,4 @@
-const SECRET = /password|token|secret|authorization/i;
+const SECRET = /password|token|secret|authorization|api[-_]?key/i;
 
 export function redact(value: unknown): unknown {
   if (Array.isArray(value)) return value.map((item) => redact(item));

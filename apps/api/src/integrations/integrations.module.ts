@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AppException } from '../common/app.exception';
-import { MockAIProvider } from './ai/mock-ai.provider';
+import { createAiProvider } from './ai/create-ai-provider';
 import { MockCalendarProvider } from './calendar/mock-calendar.provider';
 import { MockMetaProvider } from './meta/mock-meta.provider';
 import { LocalFileStorageProvider } from './storage/local-file-storage.provider';
@@ -14,6 +14,8 @@ import {
   WHATSAPP_PROVIDER,
 } from './tokens';
 import { MockVoiceProvider } from './voice/mock-voice.provider';
+import { describeMetaConfigFailure, parseMetaWhatsAppConfig } from './whatsapp/meta-config';
+import { MetaWhatsAppProvider } from './whatsapp/meta-whatsapp.provider';
 import { MockWhatsAppProvider } from './whatsapp/mock-whatsapp.provider';
 
 function mockOnly(name: string, selected: string, factory: () => unknown) {
@@ -25,6 +27,23 @@ function mockOnly(name: string, selected: string, factory: () => unknown) {
   );
 }
 
+function whatsappProvider(config: ConfigService) {
+  const selected = config.get<string>('WHATSAPP_PROVIDER', 'mock') ?? 'mock';
+  if (selected === 'mock' || selected === 'local') return new MockWhatsAppProvider();
+  if (selected === 'meta') {
+    const parsed = parseMetaWhatsAppConfig(config);
+    if (!parsed.ok) {
+      throw new AppException('PROVIDER_NOT_CONFIGURED', describeMetaConfigFailure(parsed), 500);
+    }
+    return new MetaWhatsAppProvider(parsed.config);
+  }
+  throw new AppException(
+    'PROVIDER_NOT_CONFIGURED',
+    `WhatsApp provider "${selected}" is not available. Use mock or meta.`,
+    500,
+  );
+}
+
 @Global()
 @Module({
   providers: [
@@ -32,8 +51,7 @@ function mockOnly(name: string, selected: string, factory: () => unknown) {
     {
       provide: WHATSAPP_PROVIDER,
       inject: [ConfigService],
-      useFactory: (config: ConfigService) =>
-        mockOnly('WhatsApp', config.get('WHATSAPP_PROVIDER', 'mock'), () => new MockWhatsAppProvider()),
+      useFactory: (config: ConfigService) => whatsappProvider(config),
     },
     {
       provide: META_PROVIDER,
@@ -44,8 +62,7 @@ function mockOnly(name: string, selected: string, factory: () => unknown) {
     {
       provide: AI_PROVIDER,
       inject: [ConfigService],
-      useFactory: (config: ConfigService) =>
-        mockOnly('AI', config.get('AI_PROVIDER', 'mock'), () => new MockAIProvider()),
+      useFactory: (config: ConfigService) => createAiProvider(config),
     },
     {
       provide: VOICE_PROVIDER,

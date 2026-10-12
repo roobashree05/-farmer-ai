@@ -458,10 +458,14 @@ model WhatsAppMessage {
   direction         MessageDirection
   body              String
   status            MessageStatus
-  providerMessageId String?
+  messageType       String               @default("text")
+  providerMessageId String?              @unique
+  idempotencyKey    String?
+  errorCode         String?
   statusEvents      Json?
   createdAt         DateTime             @default(now())
 
+  @@unique([conversationId, idempotencyKey])
   @@index([conversationId, createdAt])
   @@index([providerMessageId])
 }

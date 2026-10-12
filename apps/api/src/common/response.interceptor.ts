@@ -17,13 +17,21 @@ export class ResponseInterceptor implements NestInterceptor {
 
     return next.handle().pipe(
       map((data) => {
+        const path = request.originalUrl.split('?')[0];
         log('info', 'request', {
           method: request.method,
-          path: request.originalUrl,
+          path,
           statusCode: response.statusCode,
           durationMs: Date.now() - started,
         });
-        if (response.headersSent || data instanceof StreamableFile) return data;
+        if (
+          response.headersSent ||
+          data instanceof StreamableFile ||
+          path.endsWith('/whatsapp/stream') ||
+          (request.method === 'GET' && path.endsWith('/webhooks/whatsapp'))
+        ) {
+          return data;
+        }
         return { success: true, data };
       }),
     );

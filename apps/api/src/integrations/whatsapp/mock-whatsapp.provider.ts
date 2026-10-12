@@ -1,10 +1,26 @@
 import { randomUUID } from 'crypto';
+import type { WhatsAppProbeState } from './meta-config';
 import type { DeliveryStatus, WhatsAppProvider } from './whatsapp.provider';
 
 export class MockWhatsAppProvider implements WhatsAppProvider {
+  readonly mode = 'mock' as const;
   private readonly sequence = new Map<string, DeliveryStatus[]>();
   private readonly cursor = new Map<string, number>();
   private readonly contacts = new Map<string, { phone: string; name?: string }>();
+
+  connectionState(): WhatsAppProbeState | null {
+    return null;
+  }
+
+  async probeConnection(): Promise<WhatsAppProbeState> {
+    return {
+      connection: 'not_applicable',
+      detail: 'Mock provider is active. Messages stay in the CRM and are not sent to Meta.',
+      checkedAt: null,
+      displayPhoneNumber: null,
+      verifiedName: null,
+    };
+  }
 
   async sendMessage(_input: { to: string; body: string }) {
     const providerMessageId = `mock-wa-${randomUUID()}`;
@@ -13,7 +29,7 @@ export class MockWhatsAppProvider implements WhatsAppProvider {
     return { providerMessageId, status: 'SENT' as const };
   }
 
-  async sendTemplate(input: { to: string; templateName: string; variables: Record<string, string> }) {
+  async sendTemplate(input: { to: string; templateName: string; language?: string; variables: Record<string, string> }) {
     return this.sendMessage({ to: input.to, body: input.templateName });
   }
 

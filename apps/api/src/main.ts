@@ -10,7 +10,7 @@ import { ResponseInterceptor } from './common/response.interceptor';
 import { log } from './common/logger';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { bufferLogs: true });
+  const app = await NestFactory.create(AppModule, { bufferLogs: true, rawBody: true });
   const config = app.get(ConfigService);
   const secret = config.get<string>('JWT_SECRET');
   if (!secret || secret.length < 16) {
@@ -34,7 +34,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ResponseInterceptor());
   const swagger = new DocumentBuilder()
     .setTitle('AIJewel CRM API')
-    .setDescription('Local-first CRM API. Mock providers stand in for WhatsApp, Meta, voice, calendar, and AI.')
+    .setDescription('Local-first CRM API. Mock providers are the default. WHATSAPP_PROVIDER=meta uses the WhatsApp Cloud API, and AI_PROVIDER=anthropic uses Claude.')
     .setVersion('1.0.0')
     .addBearerAuth()
     .build();

@@ -24,7 +24,7 @@ export default function KnowledgePage() {
 
   return (
     <div className="stack">
-      <PageHeader title="Knowledge base" subtitle="Answers stay inside these entries. The mock AI will not invent prices." />
+      <PageHeader title="Knowledge base" subtitle="Answers stay inside these entries. Claude and the mock assistant will not invent prices." />
       {can('knowledge.write') ? (
         <form className="card form-grid" onSubmit={create}>
           <select className="select" value={form.category} onChange={(event) => setForm({ ...form, category: event.target.value })}>
