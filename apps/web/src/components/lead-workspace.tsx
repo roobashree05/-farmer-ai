@@ -45,6 +45,8 @@ export function LeadWorkspace({ endpoint }: { endpoint: string }) {
   const [actionError, setActionError] = useState('');
   const [profile, setProfile] = useState({ name: '', email: '', shopName: '', location: '', status: '' });
   const [duplicateId, setDuplicateId] = useState('');
+  const [question, setQuestion] = useState('');
+  const [summary, setSummary] = useState('');
 
   function load() {
     api<Workspace>(endpoint).then((next) => {
@@ -225,6 +227,22 @@ export function LeadWorkspace({ endpoint }: { endpoint: string }) {
       </section>
       <section className="card">
         <h2>Campaigns and AI</h2>
+        {can('knowledge.read') ? (
+          <form className="toolbar" onSubmit={(event) => {
+            event.preventDefault();
+            const message = question.trim();
+            if (!message) return;
+            void run(async () => {
+              await api('/api/ai/reply', { method: 'POST', json: { leadId: lead.id, message, channel: 'CRM' } });
+              setQuestion('');
+            });
+          }}>
+            <input className="field" data-testid="ai-question" placeholder="Ask the knowledge base" value={question} onChange={(event) => setQuestion(event.target.value)} />
+            <Button data-testid="ai-ask" type="submit">Ask</Button>
+            <Button type="button" variant="secondary" onClick={() => void api<{ summary: string }>('/api/ai/summarize', { method: 'POST', json: { leadId: lead.id } }).then((result) => setSummary(result.summary)).catch((err) => setActionError(err instanceof Error ? err.message : 'Could not summarize'))}>Summarize</Button>
+          </form>
+        ) : null}
+        {summary ? <p>{summary}</p> : null}
         {data.campaigns.map((item) => <p key={item.id}>{item.name} · {item.status}<br />{item.renderedBody}</p>)}
         {data.aiMessages.map((item) => <p key={item.id}><strong>{item.role}:</strong> {item.content} {item.escalateToHuman ? '(escalated)' : ''}</p>)}
       </section>

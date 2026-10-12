@@ -12,6 +12,9 @@ export default function ConversationPage() {
   const params = useParams<{ id: string }>();
   const [conversation, setConversation] = useState<Conversation | null>(null);
   const [body, setBody] = useState('Can you tell me about AIJewel warranty?');
+  const [templateName, setTemplateName] = useState('');
+  const [templateLanguage, setTemplateLanguage] = useState('en');
+  const [templateVariables, setTemplateVariables] = useState('');
   const [error, setError] = useState('');
   const [mode, setMode] = useState<string | null>(null);
 
@@ -33,8 +36,17 @@ export default function ConversationPage() {
     event.preventDefault();
     setError('');
     try {
-      await api(`/api/whatsapp/conversations/${params.id}/messages`, { method: 'POST', json: { body } });
+      const name = templateName.trim();
+      const variables = Object.fromEntries(
+        templateVariables.split(',').map((value) => value.trim()).filter(Boolean).map((value, index) => [String(index + 1), value]),
+      );
+      await api(`/api/whatsapp/conversations/${params.id}/messages`, {
+        method: 'POST',
+        json: name ? { templateName: name, templateLanguage, variables } : { body },
+      });
       setBody('');
+      setTemplateName('');
+      setTemplateVariables('');
       load();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Could not send the message');
@@ -57,7 +69,14 @@ export default function ConversationPage() {
         ))}
       </div>
       <form className="toolbar" onSubmit={send}>
-        <input className="field" data-testid="whatsapp-body" value={body} onChange={(event) => setBody(event.target.value)} />
+        <input className="field" data-testid="whatsapp-body" value={body} onChange={(event) => setBody(event.target.value)} placeholder="Message" disabled={mode === 'meta' && templateName.trim().length > 0} />
+        {mode === 'meta' ? (
+          <>
+            <input className="field" placeholder="Approved template name" value={templateName} onChange={(event) => setTemplateName(event.target.value)} />
+            <input className="field" placeholder="Template language" value={templateLanguage} onChange={(event) => setTemplateLanguage(event.target.value)} />
+            <input className="field" placeholder="Template variables, comma-separated" value={templateVariables} onChange={(event) => setTemplateVariables(event.target.value)} />
+          </>
+        ) : null}
         <Button data-testid="whatsapp-send" type="submit">Send</Button>
       </form>
     </div>

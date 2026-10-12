@@ -60,7 +60,7 @@ DEMO_MODE=true
 
 `AI_PROVIDER=mock` is the laptop default. To answer from Claude, set `AI_PROVIDER=anthropic` and `ANTHROPIC_API_KEY`. `ANTHROPIC_MODEL` is optional and defaults to `claude-sonnet-5`. The API refuses to start when `anthropic` is selected and the key or model is missing or invalid. After it starts, open Settings and run Test Claude connection. The page stays on `untested` until that models call succeeds. Answers still have to stay inside the knowledge base.
 
-`NEXT_PUBLIC_DEMO_PASSWORD` is what the login form fills in. Keep it the same as `SEED_PASSWORD`. `DEMO_MODE` only changes the Settings and health flags. It does not switch providers.
+`NEXT_PUBLIC_DEMO_PASSWORD` is what the login form fills in. Keep it the same as `SEED_PASSWORD`. `DEMO_MODE` only changes the Settings and health flags. It does not switch providers. `npm run dev` starts the web app from `apps/web`, and that process loads `NEXT_PUBLIC_API_URL`, `NEXT_PUBLIC_DEMO_MODE`, `NEXT_PUBLIC_DEMO_EMAIL`, and `NEXT_PUBLIC_DEMO_PASSWORD` from the repository root `.env`.
 
 `JWT_REFRESH_SECRET` is reserved. The API stores refresh tokens as SHA-256 hashes of random values and does not read that variable. `REDIS_URL` is reserved for a later rate limiter. `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DB` are read by Docker Compose and must match `DATABASE_URL`.
 

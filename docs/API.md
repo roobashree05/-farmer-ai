@@ -50,6 +50,8 @@ Repeat protection uses the `Idempotency-Key` header or `idempotencyKey`. The sam
 
 `GET /api/settings` includes `whatsapp` and `ai` objects with `mode`, `configuration`, and `connection`. `connection` is `connected` only after the matching test succeeds: `POST /api/settings/whatsapp/connection-test` or `POST /api/settings/ai/connection-test`. Both require `settings.write`. The AI test calls Anthropic's model endpoint and does not generate a reply.
 
+`POST /api/ai/reply` with `{ "leadId", "message" }` answers from the active knowledge base. `POST /api/ai/summarize` with `{ "leadId" }` summarizes stored AI messages. Both require `knowledge.read`. The lead page calls them. With `WHATSAPP_PROVIDER=meta`, the conversation page can send `{ "templateName", "templateLanguage", "variables" }` instead of a free-form body.
+
 ## Campaign preview
 
 `POST /api/campaigns/:id/preview` with `{ "leadIds": ["..."] }` returns the rendered text. Variables are `customer_name`, `shop_name`, `location`, `contact_person`, and `previous_interest`.
