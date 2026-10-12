@@ -48,7 +48,7 @@ Repeat protection uses the `Idempotency-Key` header or `idempotencyKey`. The sam
 
 `GET /api/whatsapp/stream` is `text/event-stream` for the signed-in user. `GET` and `POST /api/webhooks/whatsapp` are public Meta callbacks. The GET challenge is `text/plain`. The POST body must carry `X-Hub-Signature-256`.
 
-`GET /api/settings` includes a `whatsapp` object with `mode`, `configuration`, and `connection`. `connection` is `connected` only after `POST /api/settings/whatsapp/connection-test` succeeds. That call requires `settings.write`.
+`GET /api/settings` includes `whatsapp` and `ai` objects with `mode`, `configuration`, and `connection`. `connection` is `connected` only after the matching test succeeds: `POST /api/settings/whatsapp/connection-test` or `POST /api/settings/ai/connection-test`. Both require `settings.write`. The AI test calls Anthropic's model endpoint and does not generate a reply.
 
 ## Campaign preview
 

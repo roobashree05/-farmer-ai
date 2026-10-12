@@ -9,6 +9,7 @@ import type { Actor } from '../common/actor';
 import { CurrentUser } from '../common/current-user.decorator';
 import { RequirePermissions } from '../common/decorators';
 import { PrismaService } from '../prisma/prisma.service';
+import { AiService } from '../ai/ai.service';
 import { WhatsAppService } from '../whatsapp/whatsapp.service';
 
 class StatusDto {
@@ -48,6 +49,7 @@ export class SettingsController {
     private readonly prisma: PrismaService,
     private readonly audit: AuditService,
     private readonly whatsapp: WhatsAppService,
+    private readonly ai: AiService,
   ) {}
 
   @Get()
@@ -64,7 +66,15 @@ export class SettingsController {
         storage: this.config.get('STORAGE_PROVIDER', 'local'),
       },
       whatsapp: this.whatsapp.connectionReport(),
+      ai: this.ai.connectionReport(),
     };
+  }
+
+  @Post('ai/connection-test')
+  @RequirePermissions('settings.write')
+  @ApiOperation({ summary: 'Test the configured Anthropic API key without generating a customer reply' })
+  testAi(@CurrentUser() actor: Actor) {
+    return this.ai.testConnection(actor);
   }
 
   @Post('whatsapp/connection-test')

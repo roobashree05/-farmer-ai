@@ -12,6 +12,7 @@
 - Recording download requires `recordings.read` and writes `RECORDING_ACCESSED`.
 - Secrets come from the environment. `.env` is gitignored. `.env.example` has placeholders.
 - Meta access tokens and the app secret are read from the environment. Settings, audit rows, and logs do not include them. Graph requests send the token in the `Authorization` header, not the query string.
+- `ANTHROPIC_API_KEY` is read from the environment. Settings, audit rows, and logs do not include it. Claude requests send it in the `x-api-key` header, and redirects are rejected so the key is not forwarded. Audit redaction also strips keys named like `apiKey`.
 - `GET /api/webhooks/whatsapp` compares the verify token with a SHA-256 digest and `timingSafeEqual`, and returns the challenge only after a match. `POST` rejects a body whose `X-Hub-Signature-256` does not match `META_APP_SECRET` over the raw bytes.
 - Logs include timestamp, level, service, request id, user id, and message. They do not include request bodies. WhatsApp API failures log the HTTP status, Meta error code, and `fbtrace_id` only.
 

@@ -26,7 +26,11 @@ export default function LoginPage() {
       <section className="login-hero">
         <p>AIJewel</p>
         <h1>One desk for leads, WhatsApp, campaigns, and calls.</h1>
-        <p>Local demo mode uses mock providers, so the full workflow runs without Meta or telephony accounts.</p>
+        <p>
+          {process.env.NEXT_PUBLIC_DEMO_MODE === 'true'
+            ? 'Local demo mode uses mock providers, so the full workflow runs without Meta, Claude, or telephony accounts.'
+            : 'Sign in to the CRM. WhatsApp and Claude follow the providers configured on the API.'}
+        </p>
       </section>
       <section className="login-panel">
         <h2>Sign in</h2>

@@ -17,7 +17,7 @@ Browser (Next.js)
             -> WhatsAppProvider / MetaProvider / AIProvider / VoiceProvider / CalendarProvider
 ```
 
-`DEMO_MODE=true` selects the mock providers. Business services do not branch on vendor SDKs.
+`DEMO_MODE` is a status flag for Settings and health. Provider variables select the adapters. Business services depend on those interfaces, not on vendor SDKs.
 
 ## Layout
 
@@ -34,7 +34,7 @@ infrastructure/docker
 
 ## Provider seam
 
-`IntegrationsModule` reads `WHATSAPP_PROVIDER`, `META_PROVIDER`, `AI_PROVIDER`, `VOICE_PROVIDER`, `CALENDAR_PROVIDER`, and `STORAGE_PROVIDER`. `mock` or `local` constructs the in-process adapter. `WHATSAPP_PROVIDER=meta` constructs the WhatsApp Cloud API adapter after the Meta variables validate. Any other value fails startup with `PROVIDER_NOT_CONFIGURED` instead of pretending a live integration exists. A valid Meta configuration is still `untested` until the settings connection test succeeds.
+`IntegrationsModule` reads `WHATSAPP_PROVIDER`, `META_PROVIDER`, `AI_PROVIDER`, `VOICE_PROVIDER`, `CALENDAR_PROVIDER`, and `STORAGE_PROVIDER`. `mock` or `local` constructs the in-process adapter. `WHATSAPP_PROVIDER=meta` constructs the WhatsApp Cloud API adapter after the Meta variables validate. `AI_PROVIDER=anthropic` constructs the Claude adapter after `ANTHROPIC_API_KEY` validates. Any other value fails startup with `PROVIDER_NOT_CONFIGURED` instead of pretending a live integration exists. A valid Meta or Anthropic configuration is still `untested` until its settings connection test succeeds.
 
 ## Request path
 

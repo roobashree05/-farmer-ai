@@ -26,9 +26,11 @@ A repeated group import uses the active-lead phone index, so the same 500 contac
 
 ## AI
 
-`MockAIProvider` scores token overlap against active knowledge documents. If the question asks for a price, only documents that contain a number are eligible. Below a 0.34 score, `escalateToHuman` is true and the text says the answer is not in the knowledge base. The response quotes the document; it does not add facts.
+`AI_PROVIDER=mock` keeps `MockAIProvider`. It scores token overlap against active knowledge documents. If the question asks for a price, only documents that contain a number are eligible. Below a 0.34 score, `escalateToHuman` is true and the text says the answer is not in the knowledge base. The response quotes the document; it does not add facts.
 
-`summarizeConversation` keeps the latest turns. `classifyLead` maps a few phrases to a suggested status. The CRM does not auto-overwrite status from that suggestion except where a specific workflow, such as conversion, sets it.
+`AI_PROVIDER=anthropic` constructs `AnthropicAIProvider` only when `ANTHROPIC_API_KEY` is a Claude key (`sk-ant-` followed by at least 20 characters, no spaces). `ANTHROPIC_MODEL` is optional and defaults to `claude-sonnet-5`. The model id must look like a Claude id. Selecting `anthropic` is not a connection. Settings reports `configuration` as `missing` or `invalid`, and `connection` stays `untested` until `POST /api/settings/ai/connection-test` receives a successful `GET /v1/models/{model}` response. The test does not generate a customer reply. The key stays in the API process. Settings, audit payloads, and logs do not return it.
+
+A reply asks Claude for JSON grounded in the active knowledge documents. The CRM keeps that text only when every content word and every number already appears in the cited documents. Otherwise it quotes the cited document. A price question whose cited documents contain no number escalates. An answer with no valid source escalates with the same knowledge-base sentence the mock uses. Summaries use the latest turns and are clipped to 800 characters. Lead classification accepts only `NEW`, `QUALIFIED`, `FOLLOW_UP`, and `LOST`, and falls back to the phrase map when the model returns anything else. The CRM does not auto-overwrite status from that suggestion except where a specific workflow, such as conversion, sets it.
 
 ## Voice
 

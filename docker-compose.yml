@@ -35,15 +35,17 @@ services:
       REDIS_URL: redis://redis:6379
       JWT_SECRET: ${JWT_SECRET:-local-dev-jwt-secret-change-me}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-local-dev-refresh-secret-change-me}
-      JWT_ACCESS_TTL: 15m
-      JWT_REFRESH_TTL: 7d
-      API_PORT: 4000
-      WEB_ORIGIN: http://localhost:3000
+      JWT_ACCESS_TTL: ${JWT_ACCESS_TTL:-15m}
+      JWT_REFRESH_TTL: ${JWT_REFRESH_TTL:-7d}
+      API_PORT: ${API_PORT:-4000}
+      WEB_ORIGIN: ${WEB_ORIGIN:-http://localhost:3000}
       UPLOAD_DIRECTORY: /app/storage/recordings
-      TZ: Asia/Kolkata
-      AI_PROVIDER: mock
+      TZ: ${TZ:-Asia/Kolkata}
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
       WHATSAPP_PROVIDER: ${WHATSAPP_PROVIDER:-mock}
-      META_PROVIDER: mock
+      META_PROVIDER: ${META_PROVIDER:-mock}
       META_WABA_ID: ${META_WABA_ID:-}
       META_PHONE_NUMBER_ID: ${META_PHONE_NUMBER_ID:-}
       META_ACCESS_TOKEN: ${META_ACCESS_TOKEN:-}
@@ -51,10 +53,10 @@ services:
       META_GRAPH_API_VERSION: ${META_GRAPH_API_VERSION:-}
       META_WEBHOOK_VERIFY_TOKEN: ${META_WEBHOOK_VERIFY_TOKEN:-}
       PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-}
-      VOICE_PROVIDER: mock
-      CALENDAR_PROVIDER: mock
-      STORAGE_PROVIDER: local
-      DEMO_MODE: "true"
+      VOICE_PROVIDER: ${VOICE_PROVIDER:-mock}
+      CALENDAR_PROVIDER: ${CALENDAR_PROVIDER:-mock}
+      STORAGE_PROVIDER: ${STORAGE_PROVIDER:-local}
+      DEMO_MODE: ${DEMO_MODE:-true}
       SCHEDULER_ENABLED: "false"
       SEED_PASSWORD: ${SEED_PASSWORD:-Local-demo-1234}
       WHATSAPP_GROUP_FIXTURE: /app/mocks/whatsapp/aijewel-hyderabad-group.json
@@ -77,10 +79,12 @@ services:
       JWT_SECRET: ${JWT_SECRET:-local-dev-jwt-secret-change-me}
       JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-local-dev-refresh-secret-change-me}
       UPLOAD_DIRECTORY: /app/storage/recordings
-      TZ: Asia/Kolkata
-      AI_PROVIDER: mock
+      TZ: ${TZ:-Asia/Kolkata}
+      AI_PROVIDER: ${AI_PROVIDER:-mock}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
       WHATSAPP_PROVIDER: ${WHATSAPP_PROVIDER:-mock}
-      META_PROVIDER: mock
+      META_PROVIDER: ${META_PROVIDER:-mock}
       META_WABA_ID: ${META_WABA_ID:-}
       META_PHONE_NUMBER_ID: ${META_PHONE_NUMBER_ID:-}
       META_ACCESS_TOKEN: ${META_ACCESS_TOKEN:-}
@@ -88,10 +92,10 @@ services:
       META_GRAPH_API_VERSION: ${META_GRAPH_API_VERSION:-}
       META_WEBHOOK_VERIFY_TOKEN: ${META_WEBHOOK_VERIFY_TOKEN:-}
       PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-}
-      VOICE_PROVIDER: mock
-      CALENDAR_PROVIDER: mock
-      STORAGE_PROVIDER: local
-      DEMO_MODE: "true"
+      VOICE_PROVIDER: ${VOICE_PROVIDER:-mock}
+      CALENDAR_PROVIDER: ${CALENDAR_PROVIDER:-mock}
+      STORAGE_PROVIDER: ${STORAGE_PROVIDER:-local}
+      DEMO_MODE: ${DEMO_MODE:-true}
       SCHEDULER_ENABLED: "true"
       SEED_PASSWORD: ${SEED_PASSWORD:-Local-demo-1234}
     volumes:
@@ -107,10 +111,10 @@ services:
       context: .
       dockerfile: infrastructure/docker/web.Dockerfile
       args:
-        NEXT_PUBLIC_API_URL: http://localhost:4000
-        NEXT_PUBLIC_DEMO_MODE: "true"
-        NEXT_PUBLIC_DEMO_EMAIL: admin@aijewel.local
-        NEXT_PUBLIC_DEMO_PASSWORD: ${SEED_PASSWORD:-change-me-local-only}
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-http://localhost:4000}
+        NEXT_PUBLIC_DEMO_MODE: ${NEXT_PUBLIC_DEMO_MODE:-true}
+        NEXT_PUBLIC_DEMO_EMAIL: ${NEXT_PUBLIC_DEMO_EMAIL:-admin@aijewel.local}
+        NEXT_PUBLIC_DEMO_PASSWORD: ${NEXT_PUBLIC_DEMO_PASSWORD:-Local-demo-1234}
     ports:
       - "3000:3000"
     depends_on:

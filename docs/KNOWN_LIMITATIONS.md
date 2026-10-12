@@ -1,6 +1,6 @@
 # Known limitations
 
-- The default WhatsApp, Meta ads, voice, calendar, and AI providers are mocks. They do not deliver messages, spend money, or place phone calls. `WHATSAPP_PROVIDER=meta` is the live WhatsApp Cloud API path and still starts as untested until the connection test succeeds.
+- The default WhatsApp, Meta ads, voice, calendar, and AI providers are mocks. They do not deliver messages, spend money, or place phone calls. `WHATSAPP_PROVIDER=meta` is the live WhatsApp Cloud API path and still starts as untested until the connection test succeeds. `AI_PROVIDER=anthropic` is the live Claude path and still starts as untested until the connection test succeeds. Voice, calendar, and Meta ads metrics remain mock-only.
 - The mock WhatsApp reply is a fixed warranty question so the local demo can show a grounded answer. It is not a customer simulator with open-ended intent. Live mode does not invent that reply.
 - Live WhatsApp media files are not downloaded. The thread stores a caption or a type label.
 - WhatsApp real-time updates use an in-process server-sent event stream. A second API instance does not see the first instance's events.

@@ -1,7 +1,7 @@
 import { Global, Module } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AppException } from '../common/app.exception';
-import { MockAIProvider } from './ai/mock-ai.provider';
+import { createAiProvider } from './ai/create-ai-provider';
 import { MockCalendarProvider } from './calendar/mock-calendar.provider';
 import { MockMetaProvider } from './meta/mock-meta.provider';
 import { LocalFileStorageProvider } from './storage/local-file-storage.provider';
@@ -62,8 +62,7 @@ function whatsappProvider(config: ConfigService) {
     {
       provide: AI_PROVIDER,
       inject: [ConfigService],
-      useFactory: (config: ConfigService) =>
-        mockOnly('AI', config.get('AI_PROVIDER', 'mock'), () => new MockAIProvider()),
+      useFactory: (config: ConfigService) => createAiProvider(config),
     },
     {
       provide: VOICE_PROVIDER,
